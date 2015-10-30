@@ -27,14 +27,6 @@ static LJImagePickerHandler *handler = nil;
     return handler;
 }
 
-- (void)dealloc {
-    
-}
-
-- (void)showPickerInViewController:(UIViewController *)vc completion:(void (^)(UIImage *image,BOOL cancelled))completion {
-//    [self showPickerInViewController:vc allowsEditing:NO completion:completion];
-}
-
 - (void)showPickerInViewController:(UIViewController *)vc
                      allowsEditing:(BOOL)allowsEditing
                         sourceType:(UIImagePickerControllerSourceType)sourceType

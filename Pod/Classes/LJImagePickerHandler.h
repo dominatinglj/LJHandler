@@ -16,8 +16,6 @@ typedef void(^LJImagePickerBlock)(UIImage *image,BOOL cancelled);
 
 + (instancetype) defaultHandler;
 
-- (void)showPickerInViewController:(UIViewController *)vc completion:(LJImagePickerBlock)completion;
-
 - (void)showPickerInViewController:(UIViewController *)vc
                      allowsEditing:(BOOL)allowsEditing
                         sourceType:(UIImagePickerControllerSourceType)sourceType
