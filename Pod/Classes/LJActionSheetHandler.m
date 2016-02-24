@@ -86,7 +86,7 @@ typedef void(^AlertControllerHandler)(UIAlertAction *action);
         
         if (cancelTitle) {
             [actionSheet addAction:[UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-                wself.completion(otherTitles.count+(destructTitle?0:1));
+                wself.completion(otherTitles.count+(destructTitle?1:0));
             }]];
         }
         
